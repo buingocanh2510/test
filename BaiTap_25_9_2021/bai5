@@ -1,0 +1,31 @@
+Ghi lại các lệnh git đã học và giải thích
+VD: git init , git add . , git commit -m “first commit” …. 
+
+1. git init:
+	Được sử dưng để tạo, khởi tạo một kho chứa Git mới (Git Repository) ở local.
+	Khi đang trong thư mục project chạy lệnh "git init" sẽ tạo ra một thư mục (ẩn) tên .git,
+	thư mục này chứa tất cả thông tin mô tả cho Repository chứa project mới.
+
+2. git add .
+	Lệnh này sẽ lưu tất cả file thay đổi trong thư mục hiện tại để có thể commit vào repository máy chủ
+	
+
+3. git commit -m "first commit"
+	Khi thực hiện lệnh commit, trong repository sẽ tạo ra commit (hoặc revision) đã ghi lại sự khác biệt
+	từ trạng thái đã commit lần trước đến trạng thái hiện tại
+	
+	-m "first commit": Trong dấu ngoặc kép là phần comment nội dung của commit 
+	
+4. git remote add origin https://github.com/buingocanh2510/abc.git 
+	Lệnh này để kết nối project đã sử dụng lệnh git init ở máy local với repository ở server github
+	https://github.com/buingocanh2510/abc.git : Link tới repository của github
+	
+5. git push -u origin master
+	Lệnh này để dùng cho lần commit đầu tiên của 1 nhánh để đẩy phần code đã được commit lên repository của git
+
+6. git push:
+	Đẩy các thay đổi giữa local với repository trên github lên nhánh hiện tại (đã có) của repository trên git
+	=> Sau khi thực hiện lệnh này thì code trên git đã được thay đổi
+	
+7. git pull:
+	Kéo code mới nhất từ repository về local (về nhánh - branch hiện tại)
